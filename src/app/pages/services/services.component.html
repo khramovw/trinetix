@@ -1,0 +1,54 @@
+<div class="head bg-dark">
+  <div class="container">
+    <h1 class="header">{{ heading }}</h1>
+  </div>
+</div>
+
+<div class="container bg-dark filter-category-wrapper">
+  <app-filter-category (selected)="selectedCategory($event)"></app-filter-category>
+</div>
+
+<section class="category-cards">
+  <div class="container">
+    <div class="headline-section triangle-down d-flex align-center flex-column">
+      <div class="title">What We Do</div>
+      <p class="subtitle">
+        We launch different types of platforms and operating systems using distinguishes of every platform or operating
+        system as adventage and a powerful tool.
+      </p>
+    </div>
+
+    <div class="cards-wrapper">
+      <div class="card-category" *ngFor="let card of categories">
+
+        <div class="img-wrapper">
+          <img [src]=" 'assets/img/' + card.imgPath" alt="">
+        </div>
+
+        <div class="card-body">
+          <div class="title">
+            {{ card.label }}
+          </div>
+          <div class="description">
+            {{ card.description }}
+          </div>
+          <button type="button" class="btn outline">Learn More</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="container">
+    <div class="d-flex flex-column flex-center">
+      <div class="header">
+        <span> We enjoy what we do.</span>
+        <span> Working with smart people at great projects.</span>
+        <span>Contact us if you want to work with us.</span>
+      </div>
+      <button type="button" class="btn btn-fill">Contact Us</button>
+    </div>
+  </div>
+</section>

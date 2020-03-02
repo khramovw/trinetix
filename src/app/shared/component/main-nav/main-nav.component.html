@@ -1,0 +1,25 @@
+<nav class="main-nav" [ngClass]="{'open-menu': toggleMenu}" (click)="closeMenu()">
+  <ul class="list d-flex flex-row">
+    <li *ngFor="let item of maiNav">
+      <a
+        [routerLink]="item.path"
+        [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{exact: true}"
+        class="link"
+        [ngClass]="item.style === 'outline' ? 'outline' : '' "
+      >
+        {{ item.label }}
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<button
+  type="button"
+  class="btn mobile-btn-menu"
+  (click)="mobileMenuToggle()"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>

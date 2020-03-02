@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@import "src/app/shared/scss/vars";
+@import "src/app/shared/scss/mixins";
+@import "src/app/shared/scss/fonts";
+
+
+
+/* Styles main */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: $font-weight normal $fontSize/1 $font-family, sans-serif;
+  margin: 0;
+}
+
+.container {
+  padding: 0 em(214px);
+  width: 100%;
+}
+
+.bg-dark {
+  background-color: $bg-dark;
+
+  h1.header{
+    color: $color-white;
+  }
+}
+
+a {
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: em(14px);
+  transition: all .2s linear;
+
+  &.link {
+    text-decoration: none;
+  }
+
+  &:hover, &.active {
+    color: $color-active;
+    transition: all .2s linear;
+  }
+}
+
+ul.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.outline {
+  border: 1px solid $color-white;
+  border-radius: 30px;
+  padding: em(8px) em(20px);
+  transition: all .1s linear;
+
+  &:hover {
+    border-color: $color-light-grey;
+    background-color: $color-active;
+    color: $color-white;
+    transition: all .1s linear;
+  }
+}
+
+
+.border {
+  border-top: em(4px) solid $color-active;
+}
+
+h1.header {
+  font-size: $h1;
+  line-height: 1.2;
+  font-weight: $fontW-Medium;
+  margin: 0;
+}
+.head {
+  min-height: $head-height;
+  display: flex;
+  align-items: center;
+  font-family: 'PTSerif', sans-serif;/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/ptserif */
+/*
+	PT Serif, 400, 400 italic, 700, 700 italic
+*/
+
+}
+
+footer nav {
+  a {
+    font-size: em(16px);
+    text-transform: initial;
+
+    &.outline {
+      border: none;
+    }
+  }
+}
+
+.triangle-down {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: em(-16px);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: em(31px);
+    height: em(31px);
+    display: block;
+    border-bottom: 1px solid $color-light-grey;
+    border-right: 1px solid $color-light-grey;
+    background-color: $color-white;
+  }
+}

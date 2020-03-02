@@ -1,0 +1,47 @@
+@import "src/app/shared/scss/mixins";
+
+$containerWidth: em(1170px);
+$head-height: em(223px);
+
+$color-black: rgba-color(#000);
+$color-grey: rgba-color(#222);
+$color-dark: rgba-color(#00172b);
+$color-dark-blue: rgba-color(#105788);
+$color-blue: rgba-color(#00abff);
+$color-light-grey: rgba-color(#e1e1e1);
+$color-white: rgba-color(#fff);
+
+
+$bg-dark: $color-dark;
+$bg-light: $color-white;
+
+$color-active: $color-blue;
+$blue-border: rgba-color($color-active, .2);
+
+
+// Font waits
+$fontW-Thin: 100;
+$fontW-Extra-Light: 200;
+$fontW-Light: 300;
+$fontW-Normal: 400;
+$fontW-Medium: 500;
+$fontW-Semi-bold: 600;
+$fontW-Bold: 700;
+$fontW-Extra-Bold: 800;
+$fontW-Black: 900;
+
+$font-weight: $fontW-Normal;
+$fontSize: calc( 100vw / 1920 * 16);
+$fontSize_1600: calc( 100vw / 1600 * 16);
+$fontSize_1366: calc( 100vw / 1366 * 16);
+$fontSize_980: calc( 100vw / 980 * 16);
+$fontSize_768: 16px;
+$font-family: 'decima_nova_proregular', Arial;
+
+// Font size headers
+$h1: em(48px);
+$h2: em(32px);
+$h3: em(27px);
+$h4: em(18px);
+$h5: em(16px);
+$h6: em(14px);

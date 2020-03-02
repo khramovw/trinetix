@@ -1,0 +1,56 @@
+@import "src/app/shared/scss/vars";
+@import "src/app/shared/scss/mixins";
+
+/* Styles button */
+button {
+  &.btn {
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'decima_nova_prolight', sans-serif;
+    font-size: em(16px);
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+
+  &.outline {
+    border: 1px solid $color-active;
+    color: $color-active;
+  }
+
+  &.btn-fill {
+    background-color: $color-active;
+    color: $color-white;
+    border: 1px solid $color-active;
+    border-radius: 30px;
+    padding: em(8px) em(20px);
+    transition: all .1s linear;
+
+  }
+
+  &.mobile-btn-menu {
+    height: 60px;
+    width: 60px;
+    border: none;
+    display: none;
+
+    span {
+      width: 34px;
+      height: 10px;
+      border-top: 2px solid $color-white;
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
+
+@media all and (max-width: 768px){
+  .btn {
+    width: 100%;
+    font-size: 24px;
+  }
+  .mobile-btn-menu {
+    display: block !important;
+  }
+}

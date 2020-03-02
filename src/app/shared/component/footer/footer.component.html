@@ -1,0 +1,39 @@
+<footer class="bg-dark footer border">
+
+  <address class="contacts">
+    <div class="container">
+      <ul class="list">
+        <li *ngFor="let item of contactsList" class="contacts-item d-flex flex-column">
+          <span class="headline">{{ item.label }}</span>
+          <a href="mailto: {{ item.email }}" class="email">{{ item.email }}</a>
+          <a href="tel: {{ item.phone }}" class="phone">{{ item.phone }}</a>
+          <span class="address">{{ item.address }}</span>
+        </li>
+      </ul>
+    </div>
+  </address>
+  <!--/Address -->
+
+  <div class="secondary-row">
+    <div class="container">
+
+      <div class="d-flex flex-row align-center">
+
+        <div class="copyright">© 2010-2015 Trinetix LLC</div>
+
+        <div class="nav-wrapper">
+          <app-main-nav></app-main-nav>
+        </div>
+        <!-- / Main nav-->
+
+        <div class="share-wrapper">
+          <app-social-share></app-social-share>
+        </div>
+        <!-- / Share -->
+
+      </div>
+    </div>
+  </div>
+  <!--/Secondary -->
+
+</footer>

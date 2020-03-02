@@ -1,0 +1,11 @@
+
+<ul class="list d-flex">
+  <li
+    *ngFor="let item of filterCategory"
+    (click)="selectCategory(item.id)"
+    class="category-item"
+    [ngClass]="{'selected': item.selected}"
+  >
+    {{item.label}}
+  </li>
+</ul>

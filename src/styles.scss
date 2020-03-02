@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import "src/app/shared/scss/vars";
+@import "src/app/shared/scss/mixins";
+@import "src/app/shared/scss/main";
+@import "src/app/shared/scss/gred";
+@import "src/app/shared/scss/banner";
+@import "src/app/shared/scss/btn";
+
+/* Styles @media  */
+@media all and (max-width: 1600px){
+  body {
+    font: $font-weight normal $fontSize_1600/1 $font-family, sans-serif;
+  }
+}
+
+@media all and (max-width: 1366px){
+  body {
+    font: $font-weight normal $fontSize_1366/1 $font-family, sans-serif;
+  }
+}
+
+@media all and (max-width: 980px){
+  body {
+    font: $font-weight normal $fontSize_980/1 $font-family, sans-serif;
+  }
+  .container {
+    padding: 0 em(18px);
+  }
+  .headline-section {
+    padding: em(60px) em(16px) em(20px);
+  }
+  footer {
+    .main-nav {
+      li + li {
+        margin-left: 1em !important;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px){
+  body {
+    font: $font-weight normal $fontSize_768/1 $font-family, sans-serif;
+    width: 100%;
+  }
+  .head {
+    display: none;
+  }
+
+}

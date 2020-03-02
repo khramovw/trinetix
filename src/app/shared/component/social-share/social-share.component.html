@@ -1,0 +1,9 @@
+<ul class="list d-flex align-center">
+  <li *ngFor="let item of shareLinks">
+    <a [href]="item.url" target="_blank">
+      <span class="icon-wrapper">
+        <img [src]=" 'assets/icons/' + item.ico" [alt]="item.label">
+      </span>
+    </a>
+  </li>
+</ul>

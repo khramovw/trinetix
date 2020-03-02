@@ -1,0 +1,32 @@
+@import "src/app/shared/scss/mixins";
+@import "src/app/shared/scss/vars";
+
+.list {
+  margin: 0;
+
+}
+.category-item {
+  text-transform: uppercase;
+  color: $color-white;
+  padding: em(24px) em(20px) em(20px);
+  border-bottom: em(4px) solid transparent;
+  font-size: em(14px);
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.selected {
+    color: $color-active;
+    border-color: $color-active;
+    transition: all .1s linear;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .list {
+    overflow: auto;
+  }
+}
+

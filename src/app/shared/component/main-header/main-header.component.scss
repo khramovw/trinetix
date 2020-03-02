@@ -1,0 +1,20 @@
+@import "src/app/shared/scss/mixins";
+@import "src/app/shared/scss/vars";
+
+.main-header {
+  height: em(66px);
+  border-bottom: 1px solid $blue-border;
+}
+
+.brand {
+  width: em(128px);
+  cursor: pointer;
+}
+
+.main-nav {
+  li {
+    & + li {
+      margin-left: em(44px);
+    }
+  }
+}

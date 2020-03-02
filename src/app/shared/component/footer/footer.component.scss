@@ -1,0 +1,89 @@
+@import "src/app/shared/scss/mixins";
+@import "src/app/shared/scss/vars";
+
+
+.footer {
+  padding: em(34px) 0 0;
+  font-family: 'decima_nova_prolight', sans-serif;
+
+}
+
+.contacts .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: em(37px);
+
+  li {
+    &:nth-child(1n+5) {
+      margin-top: 3em;
+
+    }
+  }
+
+}
+
+.contacts-item {
+  span, a {
+    line-height: 1.875;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.headline, .phone, .address, .copyright {
+  color: $color-white;
+}
+
+.headline {
+  margin-bottom: 1em;
+}
+.email {
+  color: $color-active;
+}
+
+address {
+  border-bottom: 1px solid $blue-border;
+  font-style: normal;
+
+  li {
+    width: em(300px);
+    padding-right: em(90px);
+  }
+}
+
+.secondary-row {
+  min-height: em(92px);
+  display: flex;
+  align-items: center;
+}
+
+.share-wrapper {
+  width: em(200px);
+}
+
+@media all and (max-width: 768px){
+  .nav-wrapper {
+    display: none;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copyright {
+    order: 2;
+    margin: 1em 0;
+  }
+  .share-wrapper {
+    order: 1;
+  }
+  .contacts-item {
+    &:not(:first-child) {
+      width: 50% !important;
+      padding: 0;
+      margin-top: 30px;
+    }
+  }
+}

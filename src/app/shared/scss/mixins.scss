@@ -1,0 +1,10 @@
+@function em($size) {
+  $remSize: $size / 16px;
+@return $remSize * 1em;
+}
+
+@function rgba-color($color, $opacity: 1) {
+// $color: HEX, $opacity: 0...1
+$c: rgba($color, $opacity);
+@return $c
+}
