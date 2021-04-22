@@ -1,3 +1,3 @@
 # Trinetix
 
-`https://khramovw.github.io/trinetix/`
+[page](https://khramovw.github.io/trinetix/)
